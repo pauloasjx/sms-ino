@@ -1,9 +1,9 @@
 
 import 'package:sms_control/models/relay.dart';
 
-final gstart = "START_";
-final gtimer = "TIMER_";
-final gshutdown = "SHUTDOWN_";
+final gstart = "PPPL";
+final gtimer = "PPPT";
+final gshutdown = "PPPD";
 final grecipients = ["42998694213"];
 
 final grelays = [
