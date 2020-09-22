@@ -1,4 +1,3 @@
-import 'package:flutter_sms/flutter_sms.dart';
 import 'package:sms_control/static.dart';
 
 class Relay {
@@ -7,9 +6,8 @@ class Relay {
 
   Relay(this.name, this.code);
 
-  shutdown() => sendSMS(message: gshutdown + code, recipients: grecipients);
 
-  timer() => sendSMS(message: gtimer + code, recipients: grecipients);
-
-  start() => sendSMS(message: gstart + code, recipients: grecipients);
+  String get shutdown => gshutdown+code;
+  String get timer => gtimer+code;
+  String get start => gstart+code;
 }

@@ -6,11 +6,13 @@ class BaseOutlineButton extends StatelessWidget {
   final VoidCallback callback;
   final EdgeInsets margin;
   final double radius;
+  final Color color;
 
   BaseOutlineButton(
       {double strokeWidth,
         double radius,
         Gradient gradient,
+        Color color,
         Widget child,
         VoidCallback onPressed,
         EdgeInsets margin})
@@ -22,10 +24,11 @@ class BaseOutlineButton extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Colors.red[700],
-              Colors.red,
+              color,
+              color
             ],
           )),
+        this.color = color,
         this.child = child,
         this.callback = onPressed,
         this.radius = radius ?? 8.0,

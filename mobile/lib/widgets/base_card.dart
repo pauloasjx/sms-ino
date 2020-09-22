@@ -22,7 +22,7 @@ class BaseCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(8.0),
             boxShadow: [
               BoxShadow(
-                color: Colors.grey.withOpacity(0.4),
+                color: Colors.grey.withOpacity(0.8),
                 spreadRadius: 0.5,
                 blurRadius: 4,
                 offset: Offset(1, 1),
